@@ -1,20 +1,53 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-    list-style: none;
-    list-style-type: none;
-    text-decoration: none;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
 }
-  
-  header{
+
+header {
+  background-color: #000000;
+}
+
+ul li a {
+    color: #ddd;
+}
+
+.active {
+  display: none;
+}
+
+header #myLinks {
+  display: flex;
+}
+
+header a.icon {
+  display: none;
+}
+
+.icon {
+  display: none;
+}
+
+/*Mobile*/
+@media (min-width: 390px) and (max-width: 844px) {
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  header {
+    overflow: hidden;
     background-color: #000000;
+    position: relative;
   }
-  
-  header #myLinks {
-    display: none;
-  }
-  
+
   header a {
     color: white;
     padding: 14px 16px;
@@ -22,57 +55,22 @@
     font-size: 17px;
     display: block;
   }
-  
+
   header a.icon {
-   display: none;
+    background: black;
+    color: #ddd;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
   }
-  
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
 
-  
- 
-
-.icon{
-    display: none;
+  header a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 }
-
-
-
-
-
-
-
-  /*Mobile*/
-  @media (min-width: 390px) and (max-width: 844px) {
-    .mobile-container {
-        max-width: 480px;
-        margin: auto;
-        background-color: #555;
-        height: 500px;
-        color: white;
-        border-radius: 10px;
-      }
-
-    header{
-        overflow: hidden;
-        background-color: #000000;
-        position: relative;
-      }
-
-    header a.icon {
-        background: black;
-        color: #ddd;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .active {
-        background-color: #04AA6D;
-        color: white;
-      } 
-
-      header a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-  }
