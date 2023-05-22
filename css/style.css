@@ -94,7 +94,6 @@ swiper-container {
  
 /*Footer*/
 footer{
-    
     background-color: #000000;
     display: flex;
     margin-top: 30px;
@@ -178,4 +177,15 @@ footer{
     color: black;
   }
   /*Celular fim*/
+  .footer{
+    display: block;
+  }
+  .footer-center{
+    width: 80%;
+    height: 400px;
+  }
+  .footer-list{
+    padding-top: 20px;
+    width: 100%;
+  }
 }
